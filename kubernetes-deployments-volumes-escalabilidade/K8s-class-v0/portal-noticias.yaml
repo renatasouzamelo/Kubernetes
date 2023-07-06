@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: portal-noticias
+spec:   
+  containers:
+    - name: portal-noticias-containers  #- inicio de uma nova declaracao
+      image: aluracursos/portal-noticias:1 # image que ja foi criada e contem a aplicacao
