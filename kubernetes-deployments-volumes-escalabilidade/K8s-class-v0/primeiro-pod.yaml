@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod ##tipo de recurso
+metadata:
+  name: primeiro-pod-declarativo ##name pod
+spec:   
+  containers:
+    - name: nginx-container  #- inicio de uma nova declaracao
+      image: nginx-container     

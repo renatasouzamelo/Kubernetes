@@ -1,0 +1,13 @@
+#CREATE NODE PORT 
+
+apiVersion: v1 #versao da API
+kind: Service  #tipo
+metadata:
+   name: svc-pod-1
+spec:
+  type: NodePort #tipo de service 
+  ports:
+    - port: 80
+
+  selector:
+    app: primeiro-pod # junto com "selector" seleciona o pod, exemplo: aqui estamos selecionando o (pod-2.yaml)   
