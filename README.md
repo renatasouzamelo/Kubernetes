@@ -1,2 +1,2 @@
 # Kubernetes
-Repositoorio destinado a projetos utilizando Kubernetes
+Repositorio destinado a projetos utilizando Kubernetes
