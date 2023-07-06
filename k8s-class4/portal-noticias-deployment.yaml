@@ -17,6 +17,16 @@ spec:
           envFrom:
             - configMapRef:
                 name: portal-configmap
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            periodSeconds: 10
+            failureThreshold: 3 # number of tolerated failures before container restarts
+            initialDelaySeconds: 20
+
+
+            
   replicas: 3
   selector:
     matchLabels:
